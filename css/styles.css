@@ -98,3 +98,13 @@ div .border {
   border-color: #ddc686;
   border-radius: 5px;
 }
+
+.error {
+  background-color: yellow;
+  color: red;
+}
+
+
+.showInput {
+  background-color: pink;
+}

@@ -25,10 +25,16 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
+
   <!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
   <!-- which is built on top of JQuery and offers additional possibilities -->
   <!-- For example, JQuery UI has a datepicker which is popular and that we can use -->
-  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet"
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/black-tie/jquery-ui.css" rel="stylesheet"
     type="text/css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -38,6 +44,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/styles.css" rel="stylesheet">
+  <!-- <link href="css/jquery-ui.css" rel="stylesheet"> -->
 
 </head>
 
@@ -124,7 +131,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2><img src="assets/icons/icons8-about-100.png" alt="logo" style="width:50px;"> About</h2>
+          <h2><img src="assets/icons/icons8-about-100.png" alt="logo" style="width:100px;"> About</h2>
           <br>
 
           <p class="lead">We are an award winning barbershop in Ottawa, ON.</p>
@@ -143,7 +150,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2><img src="assets/icons/icons8-barbershop-100.png" alt="logo" style="width:50px;"> Services</h2>
+          <h2><img src="assets/icons/icons8-barbershop-100.png" alt="logo" style="width:100px;"> Services</h2>
           <br>
           <p class="lead">At the CUT you can walk in and request your favorite Barber or Stylist, or if you don’t have a
             preference take the first available.
@@ -190,7 +197,7 @@
           </div>
           <br>
 
-          <h4><img src="assets/icons/icons8-barber-pole-100.png" alt="logo" style="width:50px;"> Meet our barbers</h4>
+          <h4><img src="assets/icons/icons8-barber-pole-100.png" alt="logo" style="width:100px;"> Meet our barbers</h4>
           <br>
           <div class="card-columns">
             <div class="card" style="width:200px">
@@ -254,7 +261,7 @@
         <br>
 
         <div class="col-lg-8 mx-auto">
-          <h2><img src="assets/icons/icons8-book-and-pay-100.png" alt="logo" style="width:50px;"> Book appointment and
+          <h2><img src="assets/icons/icons8-book-and-pay-100.png" alt="logo" style="width:100px;"> Book appointment and
             pay</h2>
           <br>
           <p>Monday through Friday we are open 9:00 AM until 7:00 PM. On Saturdays we are open 10:00 AM until 3:00 PM.
@@ -263,69 +270,117 @@
           <br>
 
           <div class="border">
-            <form>
+            <form id="customerInfoForm">
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="inputService">Choose a service</label>
-                  <select id="inputService" class="form-control">
-                    <option selected>Choose...</option>
-                    <option>Men's Premium Haircut - $30</option>
-                    <option>Buzz Cut - $20</option>
-                    <option>Beard Trim - $5-$15</option>
-                    <option>Neck Trim - $5</option>
-                    <option>Shampoo - $5</option>
-                  </select>
+                  <label for="inputService">Choose services</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios1" value="option1"
+                      checked>
+                    <label class="form-check-label" for="gridRadios1">
+                      Men's Premium Haircut - $30
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                      Buzz Cut - $20
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios3" value="option3">
+                    <label class="form-check-label" for="gridRadios3">
+                      Beard Trim - $5-$15
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios4" value="option4">
+                    <label class="form-check-label" for="gridRadios4">
+                      Neck Trim - $5
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios5" value="option5">
+                    <label class="form-check-label" for="gridRadios5">
+                      Shampoo - $5
+                    </label>
+                  </div>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="inputBarber">Choose a baber</label>
-                  <select id="inputBarber" class="form-control">
-                    <option selected>Choose...</option>
-                    <option>Nickolas Mcmillan</option>
-                    <option>Malick O'Neal</option>
-                    <option>Miguel Rodriguez</option>
-                    <option>Ali Karkaji</option>
-                    <option>Amar Adi</option>
-                  </select>
+                  <label for="inputBarber">Choose barber</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="barberChoices" id="barber1" value="1" checked>
+                    <label class="form-check-label" for="gridRadios1">
+                      Nickolas Mcmillan
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="barberChoices" id="barber2" value="2">
+                    <label class="form-check-label" for="gridRadios2">
+                      Malick O'Neal
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="barberChoices" id="barber3" value="3">
+                    <label class="form-check-label" for="gridRadios3">
+                      Miguel Rodriguez
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="barberChoices" id="barber4" value="4">
+                    <label class="form-check-label" for="gridRadios4">
+                      Ali Karkaji
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="barberChoices" id="barber5" value="5">
+                    <label class="form-check-label" for="gridRadios5">
+                      Amar Adi
+                    </label>
+                  </div>
                 </div>
               </div>
               <div class="form-group">
-                <label for="inputDateAndTime">Pick a date and time</label>
-                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+                <label for="dateInput">Pick a date</label>
+                <input class="form-control" type="text" id="dateInput" placeholder="mm/dd/yy" required>
               </div>
               <div class="form-group">
                 <label for="inputName">Name</label>
-                <input type="text" class="form-control" id="inputName" placeholder="Please enter your name">
+                <input type="text" class="form-control" id="inputName" placeholder="Please enter your name" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="inputPhoneNumber">Phone</label>
-                  <input type="text" class="form-control" id="inputPhoneNumber"
-                    placeholder="Please enter your phone number">
+                  <label for="phone">Phone</label>
+                  <input type="text" class="form-control" id="phone" placeholder="(xxx) xxx-xxxx" required>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="inputEmail4">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="Please enter your email">
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Please enter your email"
+                    required>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="inputCreditCardNumber">Card details</label>
-                  <input type="text" class="form-control" id="inputCreditCardNumber"
-                    placeholder="Please enter your card number">
+                  <label for="debit">Card details</label>
+                  <input type="text" class="form-control" id="debit" placeholder="xxxx-xxxx-xxxx-xxxx"
+                    title="We ask for your credit card number in case of no-show, 10$ will be charged." required>
                 </div>
-                <div class="form-group col-md-4">
-                  <label for="inputCreditCardNumber">Security code</label>
-                  <input type="text" class="form-control" id="inputCreditCardNumber"
-                    placeholder="Please enter your security code">
+                <div class="form-group col-md-3">
+                  <label for="securityCode">Security code</label>
+                  <input type="text" class="form-control" id="securityCode" placeholder="xxx" required>
                 </div>
-                <div class="form-group col-md-2">
-                  <label for="inputExpiryDate">Expiry date</label>
-                  <input type="text" class="form-control" id="inputExpiryDate" placeholder="MM / YY">
+                <div class="form-group col-md-3">
+                  <label for="expiryDate">Expiry date</label>
+                  <input type="text" class="form-control" id="expiryDate" placeholder="mm/yy" required>
                 </div>
               </div>
-              <button type="submit" class="btn custom-color">Book and pay</button>
+              <button type="submit" class="btn custom-color btn-send">Book and pay</button>
             </form>
           </div>
+
         </div>
       </div>
   </section>
@@ -334,7 +389,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2><img src="assets/icons/icons8-location-100.png" alt="logo" style="width:50px;"> Location</h2>
+          <h2><img src="assets/icons/icons8-location-100.png" alt="logo" style="width:100px;"> Location</h2>
           <br>
           <br>
           <div class="container">
@@ -371,7 +426,7 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
+  <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
