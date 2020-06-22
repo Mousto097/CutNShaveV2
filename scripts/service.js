@@ -157,6 +157,22 @@ $(document).ready(function () {
         $("#debit").removeClass("showInput");
     });
 
+    $("#phone").on("mouseenter", function () {
+        $("#phone").addClass("showInput");
+    });
+
+    $("#phone").on("mouseleave", function () {
+        $("#phone").removeClass("showInput");
+    });
+
+    $("#securityCode").on("mouseenter", function () {
+        $("#securityCode").addClass("showInput");
+    });
+
+    $("#securityCode").on("mouseleave", function () {
+        $("#securityCode").removeClass("showInput");
+    });
+
     // https://jqueryui.com/tooltip/ 
     // The class "highlight" used here is predefined in JQuery UI
     // the message of the tooltip is encoded in the input (in the HTML file)
@@ -166,5 +182,15 @@ $(document).ready(function () {
         }
     });
 
+    $("#phone").tooltip({
+        classes: {
+            "ui-tooltip": "highlight"
+        }
+    });
 
+    $("#securityCode").tooltip({
+        classes: {
+            "ui-tooltip": "highlight"
+        }
+    });
 });
