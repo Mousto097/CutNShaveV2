@@ -4,7 +4,7 @@ Ce laboratoire a pour but la construction d’un site d’une entreprise de serv
 
 ## Live preview
 
-https://mousto097.github.io/SEG3525-Module4-Service/
+https://mousto097.github.io/CutNShaveV2/
 
 ## Source
 
