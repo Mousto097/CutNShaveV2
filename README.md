@@ -1,6 +1,8 @@
 # Cut 'N' Shave
 
-Ce laboratoire a pour but la construction d’un site d’une entreprise de service qui respectera les principes de design présentés dans le livre Design of Everyday Things du Dr. Norman. Tels que nous avons vus dans les vidéos, ces principes sont : visibilité, rétroaction, potentialité, association, contraintes et cohérence.
+In the heart of downtown Ottawa, Hair Dynamic is a beautiful and cozy hair salon. With over 20 years of experience in the industry we bring a level of professionalism that is unmatched.
+
+Previous
 
 ## Live preview
 
@@ -12,4 +14,4 @@ This folder contains many elements adapted from this Bootstrap HTML template as 
 
 ## Copyright and License
 
-Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/gh-pages/LICENSE) license.
+Copyright 2020 Mamadou Bah.
