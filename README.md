@@ -6,11 +6,6 @@ In the heart of downtown Ottawa, Hair Dynamic is a beautiful and cozy hair salon
 ## Live preview
 
 https://mousto097.github.io/CutNShaveV2/
-
-## Source
-
-This folder contains many elements adapted from this Bootstrap HTML template as found here: https://startbootstrap.com/templates/scrolling-nav/
-
 ## Copyright and License
 
 Copyright 2020 Mamadou Bah.
